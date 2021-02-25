@@ -1,4 +1,5 @@
 Learning the basics of Python and Git.
-2021
 
-Feb. 2021 working on the basics of python with w3schools online. 
+Sources: w3schools online, and Front End Dev. Tanner Heffner
+
+Feb. 2021 
