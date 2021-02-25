@@ -17,12 +17,12 @@ print(x,y,z)
 print(type(x),type(y),type(z))
 
 j = "\ndouble quotes are the same"
-k = 'as sinlge quotes'
+k = 'as sinlge quotes\n'
 
 print(j)
 print(k)
 
-A = "\nVariable names are case-sensitive.\n"
+A = "Variable names are case-sensitive.\n"
 print(A)
 
 x, y, z = "Orange", "Banana", "Cherry"
@@ -138,9 +138,96 @@ if "expensive" not in txt:
     print("'expensive' is NOT present")
 print("\n")
 
-a = "Hello"
-b = "World"
+a = "No"
+b = "Space"
 c = a + b
 print(c)
 c = a + " " + b
 print(c)
+print("\n")
+
+age = 27
+txt = "My age is {}"
+print(txt.format(age))
+print("\n")
+
+q = 3
+i = 567
+p = 49.95
+myorder = "I want {} pieces of item {} for {} dollars"
+print(myorder.format(q,i,p))
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(q,i,p))
+print("\n")
+
+txt = "I once was a \"young warthog\""
+print(txt)
+txt = "Hello\tTab!"
+print(txt)
+print("\n")
+
+#Boolean Values
+print("Is 10 > 9?")
+print(10 > 9)
+print("Is 10 = 9?")
+print(10 == 9)
+print("Is 10 < 9?")
+print(10 < 9)
+print("Let a = 200 and b = 33")
+a = 200
+b = 33
+print("\n")
+
+if b > a:
+    print("b is greater than a")
+else:
+    print("b is not greater than a")
+print("\n")
+
+print("Evaluate \"Hello\"")
+print(bool("Hello"))
+print("Evalute 15")
+print(bool(15))
+print("Evaluate a = 200 (from above).")
+print(bool(a))
+print("\n")
+
+print("Any string is True except for empty strings.")
+print("Any number is true, except 0.")
+print("Any list, tuple, set, and dictionary are true except empty ones.")
+print("\n")
+
+print("Here are some True Values")
+print("abc",bool("abc"))
+print("123",bool(123))
+print("[\"apple\", \"cherry\", \"banana\"]", bool(["apple", "cherry", "banana"]))
+print("\n")
+
+print("Here are some False Values")
+print("\"False\"", bool(False))
+print("None",bool(None))
+print("0",bool(0))
+print("\"\"",bool(""))
+print("[]", bool([]))
+print("{}", bool({}))
+print("\n")
+
+print("Here is a function that returns a Boolean Value.")
+def myFunc():
+    return True
+print(myFunc())
+print("_len_ function returns 0 or false:")
+class myclass():
+  def __len__(self):
+    return 0
+myobj = myclass()
+print(bool(myobj))
+print("Code based on a Boolean function that tells if :")
+if myFunc():
+    print("YES!")
+else:
+    print("NO!")
+print("\n")
+
+print("Check if an object is an integer or not")
+print(isinstance(a, int))
