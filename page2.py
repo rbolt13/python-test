@@ -26,7 +26,8 @@ txt = "x // y = {}"
 print(txt.format(z))
 print("\n")
 
-print("Great! Now let's move assign different operations to x.")
+#assign operations
+print("Great! Now let's assign different operations to x.")
 print("Lets let x = 5.")
 x = 5
 x += 3
@@ -69,6 +70,7 @@ txt = "x <<= 3 = {}"
 print(txt.format(x))
 print("\n")
 
+#compare operations
 print("Good work! Now lets use some compare operations shall we.")
 print("Lets use x = 10 and y = 5 again. And T/F")
 x = 10
@@ -102,6 +104,7 @@ txt = "Revers the result of if x greater than 3 and less than 10? {}"
 print(txt.format(z))
 print("\n")
 
+#membership operations
 print("Excellent work! These are the building blocks for more advance work.")
 print("Lets continue with membership operations.")
 print("Membership operations are used to test if a sequence is presented in an object.")
