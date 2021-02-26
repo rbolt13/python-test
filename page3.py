@@ -67,5 +67,30 @@ del list1[2]
 print(list1)
 print("Did you remember list2? Me neither. Let's delete it, and clear list 1")
 del list2
-list1.clear()
-print("/n")
+#list1.clear()
+print("\n")
+
+#Loop Lists
+print("Let's output a list for a strawberry banana smoothie:")
+thislist = ["strawberries", "banana", "almond milk"]
+for x in thislist:
+    print(x)
+print("Again with an index i")
+for i in range(len(thislist)):
+    print(thislist[i])
+print("Again with a while loop")
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+print("\n")
+
+print("Let's start a list of fruit, and then create a newlist with only the fuits containging the letter a.")
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
