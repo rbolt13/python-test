@@ -8,7 +8,7 @@ page1 : print(), casting, def func():, addition, deftype(), int, float,
 page2 : python operations, assign operations, compare operations, membership    
         operations.
 
-page3 : lists , loop lists, list comprehension
+page3 : lists , loop lists, list comprehension, tuples 
 
 
 Feb. 2021
