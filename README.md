@@ -12,6 +12,6 @@ page3 : lists , loop lists, and list comprehension
 
 ^^^ Feb. 2021 ^^^
 
-dateTypes : Tuple, List Set, Dictionary  
+dateTypes : Tuple, List, Set, Dictionary  
 
 ^^^ March 2021 ^^^

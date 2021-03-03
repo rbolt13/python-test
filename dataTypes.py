@@ -123,3 +123,120 @@ index() : searches the tuple for a specified valued and returns the
 """
 
 #Sets
+print("\nNow lets print a set using curly brackets instead of parentheses")
+#Duplicates not allowed
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+print(type(thisset))
+print(len(thisset))
+#set can use differet data types and varying data types
+
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+print(thisset)
+#for loop
+for x in thisset:
+    print(x)
+print("\nIs banana in thisset?")
+print("banana" in thisset)
+print("\nLets add orange to thisset")
+thisset.add("orange")
+print(thisset)
+#.update()
+print("\nAdd the tropical set to thisset")
+tropical = {"pineapple", "mango", "papaya"}
+thisset.update(tropical)
+print(thisset)
+print("\nAnd the tuple mylist")
+mylist = ["kiwi", "strawberry"]
+thisset.update(mylist)
+print(thisset)
+# .remove and .discard
+print("\nNow lets remove some things")
+thisset.remove("banana")
+print(thisset)
+thisset.discard("apple")
+print(thisset)
+#.pop()
+txt = "\nAnd with the pop() method we will remove {}"
+x = thisset.pop()
+print(txt.format(x))
+print(thisset)
+
+"""
+to delete or clear set
+thisset.clear()
+del thisset
+"""
+#.union()
+print("\nTime to play around with union()")
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = set1.union(set2)
+print(set3)
+#.update()
+print("\nAgain but with update()")
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set1.update(set2)
+print(set1)
+#.intersection_update()
+print("\nFind common items that exist for both sets")
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.intersection_update(y)
+print(x)
+#.intersection()
+print("\nOr create a new list from those items")
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.intersection(y)
+print(z)
+#.symmetric_difference_update()
+print("\nKeep the items that are present in both sets")
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+x.symmetric_difference_update(y)
+print(x)
+#.symmetric_difference()
+print("\nAgain but creating a new set")
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+z = x.symmetric_difference(y)
+print(z)
+"""
+Set Methods:
+add()
+clear()
+copy()
+difference()
+difference_update()
+discard()
+intersection()
+intersection_update()
+isdisjoint()
+issubset()
+pop()
+remove()
+symmetric_difference()
+symmetric_difference_update()
+union()
+update()
+"""
+#Dictionary : Used to store data values in key: value pairs
+#Ordered, changeable, and does not allow duplicates
+
+print("\nLet's switch gears and create and print a dictionary: ")
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+#print value of "brand"
+print(thisdict["brand"])
+#print length
+print(len(thisdict))
+#print type
+print(type(thisdict))
+
+#Can use strings, int, boolean, and list data types
