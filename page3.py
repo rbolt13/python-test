@@ -85,12 +85,11 @@ while i < len(thislist):
   i = i + 1
 print("\n")
 
-print("Let's start a list of fruit, and then create a newlist with only the fuits containging the letter a.")
+print("Let's start a list of fruit, and then create a newlist with only the fruits containging the letter a.")
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 newlist = []
 
 for x in fruits:
   if "a" in x:
     newlist.append(x)
-
 print(newlist)

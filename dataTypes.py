@@ -203,8 +203,7 @@ x = {"apple", "banana", "cherry"}
 y = {"google", "microsoft", "apple"}
 z = x.symmetric_difference(y)
 print(z)
-"""
-Set Methods:
+""" Set Methods:
 add()
 clear()
 copy()
@@ -240,3 +239,118 @@ print(len(thisdict))
 print(type(thisdict))
 
 #Can use strings, int, boolean, and list data types
+
+txt = "\nThe value for model is : {}"
+#thisdict[]
+x = thisdict["model"]
+print(txt.format(x))
+#thisdict.get()
+x = thisdict.get("model")
+print(txt.format(x))
+#thisdict.keys() : returns a list of all the keys in the dictionary
+txt = "\nThe keys for thisdict are : {}"
+x = thisdict.keys()
+print(txt.format(x))
+
+print("\nLet's add the color white to our dictionary.")
+thisdict["color"] = "white"
+x = thisdict.keys()
+print(x)
+#thisdict.values
+x = thisdict.values()
+print(x)
+
+print("Change the year from 1964 to 2020")
+thisdict["year"] = 2020
+x = thisdict.values()
+print(x)
+
+#update()
+print("Update the year from 2020 to 2016")
+thisdict.update({"year" : 2016})
+x  = thisdict.values()
+print(x)
+
+#thisdict.items()
+print("\nGet a list of the key value pairs")
+x = thisdict.items()
+print(thisdict)
+
+#if statement
+print("\nLets check if 'model' is in thisdict")
+if "model" in thisdict:
+    print("Yes, 'model' is one of the keys in the thisdict dictionary!!\n")
+
+#for loop
+for x in thisdict:
+    print(x)
+print("\n")
+for x in thisdict:
+    print(thisdict[x])
+print("\n")
+for x in thisdict.values():
+    print(x)
+print("\n")
+for x in thisdict.keys():
+    print(x)
+print("\n")
+for x, y in thisdict.items():
+    print(x,y)
+
+#copy()
+print("\nMake a copy of thisdict called mydict.")
+mydict = thisdict.copy()
+print(mydict)
+#dict()
+print("\nMake a copy of thisdict called adict.")
+adict = dict(thisdict)
+print(adict)
+#pop() : removes items with specific key names
+print("\nDelete 'model'.")
+thisdict.pop("model")
+print(thisdict)
+#popitem()
+print("\nDelete the last inserted item")
+thisdict.popitem()
+print(thisdict)
+#del
+print("\nDelete the 'brand'.")
+del thisdict["brand"]
+print(thisdict)
+#clear() : empties dictionary
+thisdict.clear()
+
+#Nested Dictionaries
+print("\nCreate a dictionary that contains three dicitonaries, and then create one dictionary that contains them.")
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+print(myfamily)
+
+""" Dictionary Methods
+clear()
+copy()
+fromkeys()
+get()
+items()
+keys()
+pop()
+popitem()
+setdefault()
+update()
+values()
+"""
