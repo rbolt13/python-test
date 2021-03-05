@@ -14,4 +14,6 @@ page3 : lists , loop lists, and list comprehension
 
 dateTypes : Tuple, List, Set, Dictionary  
 
+loops : if ... else, while, and for loops
+
 ^^^ March 2021 ^^^
