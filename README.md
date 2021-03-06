@@ -16,4 +16,12 @@ dateTypes : Tuple, List, Set, Dictionary
 
 loops : if ... else, while, and for loops
 
+8ball : code not mine.
+
+Yahtzee : Rolls six dice.
+
+OhmsLaw: prompts user to enter volts and resistance, to output the current in amps. Based off c++ code from CS-161
+
+functions : functions and lambda
+
 ^^^ March 2021 ^^^

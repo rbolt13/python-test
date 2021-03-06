@@ -61,3 +61,99 @@ if x > 10:
 #pass : avoids getting error
 if b > a:
     pass
+
+#while loops
+print("\nLet's print 1 - 5 with a while loop.")
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+#break
+print("\nNow let's break when the look i is 3.")
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i +=1
+#continue the next iterartion if i is 3
+print("\nAnd continue again starting with i = 3.")
+i = 3
+while i < 6:
+    i+= 1
+    if i == 3:
+        continue
+    print(i)
+#Else
+print("\nPrint a message once the condition is false")
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+
+ #For loops
+print("\nPrint each fruit in the list.")
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+ #break : Notice the first case stops after banana and the second stops before.
+print("\nStop the loop before it goes through all the items. ")
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+print("\nStop the loop before it goes through all the items. ")
+for x in fruits:
+  if x == "banana":
+    break
+  print(x)
+
+#continues
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+
+#Looping a string
+print("\nLoop through the letters of the word banana.")
+for x in "banana":
+  print(x)
+
+#range
+for x in range(6):
+    print(x)
+
+for x in range(2,6):
+    print(x)
+
+#increase by value of 3
+for x in range(2,30, 3):
+    print(x)
+
+#Else in for loop
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+
+#break when range is 3
+for x in range(6):
+  if x == 3: break
+  print(x)
+else:
+  print("Finally finished!")
+
+#Nested Loops
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+
+#pass
+for x in [0, 1, 2]:
+  pass
