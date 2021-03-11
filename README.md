@@ -24,4 +24,6 @@ OhmsLaw: prompts user to enter volts and resistance, to output the current in am
 
 functions : functions and lambda
 
+arrays : using lists as arrays
+
 ^^^ March 2021 ^^^
